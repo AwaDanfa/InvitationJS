@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Invitation Card</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="content-card">
+
+                <h5 class="ticket">Ticket #<span id="ticketNum"></span></h5>
+                <!-- span is an element that allow us to select few charcaters in a text - generate a 6 digits ticket number -->
+                <h4 class="invite">Just IT Would Like To Invite You To</h4>
+
+                <h1 class="headline">Software Development Bootcamp</h1>
+                <h4 class="dates">15/11/22 - 02/03/23</h4>
+        
+                
+                <div class="rsvp">
+                    <h3>Will you be joining the Bootcamp?</h3>
+                    <div class="btn" onclick="maybeAlert()" >
+                    
+                        <p>Yes!</p>
+                    </div>
+                    <div class="btn" onclick="signUpPrompt()">
+                        <p>Sign me up!</p>
+                    </div>
+                </div>
+
+                <h3 id="userMsg"></h3>
+            </div>
+
+
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
